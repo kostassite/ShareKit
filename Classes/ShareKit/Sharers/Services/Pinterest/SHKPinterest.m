@@ -43,7 +43,7 @@
 
 + (BOOL)canShareItem:(SHKItem *)item {
  
-    BOOL isOfImageType = item.URLContentType == SHKShareTypeImage && item.URL != nil;
+    BOOL isOfImageType = item.URLContentType == SHKURLContentTypeImage && item.URL != nil;
     BOOL isPictureURI = item.URLPictureURI != nil;
     
     return isOfImageType || isPictureURI;
